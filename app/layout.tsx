@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
+import NextTopLoader from 'nextjs-toploader';
+
 import "./globals.css";
 import Header from "./components/header/Header";
 import Footer from "./components/Footer";
@@ -20,9 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
-        <Header/>
+      <NextTopLoader color="#4F719E" />
         {children}
-        <Footer/>
         </body>
     </html>
   );

@@ -3,7 +3,7 @@ import LiveCard from './LiveCard';
 import { LiveData } from './types/app';
 const Live = async() => {
     const liveData: LiveData = await getLive();
-    console.log(liveData)
+    // console.log(liveData)
   return (
     <section className="pt-6">
         <div className="container">

@@ -9,7 +9,7 @@ type GreatestProps = {
 }
 const Greatest = ({img, title, description, linkText}:GreatestProps) => {
   return (
-    <div className="relative container ">
+    <div className="relative container pb-10 mb-10 ">
         <div className="relative h-96 min-w-[300px]">
         <Image src={img}
         alt="Greatest-img"
@@ -19,7 +19,7 @@ const Greatest = ({img, title, description, linkText}:GreatestProps) => {
     <div className="absolute top-32 left-12">
         <h3 className="text-[35px] mb-3 w-64">{title}</h3>
         <p>{description}</p>
-        <Link href='/' className="text-sm block w-fit px-4 py-2 rounded-lg mt-5 text-white bg-[#1F334E]">
+        <Link href='/' className="btn text-sm block w-fit px-4 py-2 rounded-lg mt-5 text-white bg-[#1F334E]">
             {linkText}
         </Link>
     </div>

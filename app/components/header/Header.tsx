@@ -6,7 +6,7 @@ import { SearchBar } from './SearchBar'
 import Navbar from './Navbar'
 
 
-const Header = () => {
+const Header = ({placeholder}:{ placeholder?: string }) => {
   return (
     <header className='sticky p-5 top-0 z-50 bg-white shadow-md'>
         <div className='container relative grid grid-cols-3 items-center mx-auto'>
@@ -17,7 +17,7 @@ const Header = () => {
             className='w-auto h-auto'
             />
         </Link>
-        <SearchBar/>
+        <SearchBar placeholder={placeholder}/>
         <Navbar/>
         </div>
     </header>
